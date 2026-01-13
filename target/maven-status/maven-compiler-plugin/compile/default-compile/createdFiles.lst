@@ -1,0 +1,6 @@
+com\amazon\pages\HomePage.class
+com\amazon\utils\TestDataProvider.class
+com\amazon\driverUtil\DriverManager.class
+com\amazon\utils\ConfigReader.class
+com\amazon\utils\ExcelUtils.class
+com\amazon\pages\LoginPage.class
