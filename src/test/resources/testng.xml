@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.1.dtd" >
 <suite name="AutomationSuite" verbose="1">
-<listeners>
+<!--<listeners>
   <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
-</listeners>
+</listeners>-->
 
     <!-- Register your custom listener -->
  <!--   <listeners>
