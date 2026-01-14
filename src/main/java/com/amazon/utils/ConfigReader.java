@@ -7,7 +7,7 @@ public class ConfigReader {
     private static Properties props;
 
     static {
-        try (FileInputStream fis = new FileInputStream("./src/test/resources/config.properties")) {
+        try (FileInputStream fis = new FileInputStream("./src/test/resources/config/config.qa.properties")) {
             props = new Properties();
             props.load(fis);
         } catch (Exception e) {
