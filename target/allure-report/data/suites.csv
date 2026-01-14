@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"unknown","Wed Jan 14 00:19:14 IST 2026","Wed Jan 14 00:19:14 IST 2026","0","AutomationSuite","SampleTests","com.amazon.tests.LoginTest","com.amazon.tests.LoginTest","testAdminJobDetails","testAdminJobDetails",""
-"passed","Wed Jan 14 00:19:25 IST 2026","Wed Jan 14 00:19:25 IST 2026","5","AutomationSuite","SampleTests","com.amazon.tests.LoginTest","com.amazon.tests.LoginTest","testAddition","testAddition","Verify addition functionality"
-"unknown","Wed Jan 14 00:19:14 IST 2026","Wed Jan 14 00:19:14 IST 2026","1","AutomationSuite","SampleTests","com.amazon.tests.LoginTest","com.amazon.tests.LoginTest","testLogin","testLogin",""

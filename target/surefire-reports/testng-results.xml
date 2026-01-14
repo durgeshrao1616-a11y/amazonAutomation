@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-14T00:19:14 IST" name="AutomationSuite" finished-at="2026-01-14T00:19:27 IST" duration-ms="12559">
+  <suite started-at="2026-01-14T12:15:31 IST" name="AutomationSuite" finished-at="2026-01-14T12:16:04 IST" duration-ms="33381">
     <groups>
     </groups>
-    <test started-at="2026-01-14T00:19:14 IST" name="SampleTests" finished-at="2026-01-14T00:19:27 IST" duration-ms="12559">
+    <test started-at="2026-01-14T12:15:31 IST" name="SampleTests" finished-at="2026-01-14T12:16:04 IST" duration-ms="33381">
       <class name="com.amazon.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.tests.LoginTest@239a307b]" started-at="2026-01-14T00:19:14 IST" name="setUp" finished-at="2026-01-14T00:19:25 IST" duration-ms="11081" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.tests.LoginTest@5965d37]" started-at="2026-01-14T12:15:31 IST" name="setUp" finished-at="2026-01-14T12:16:03 IST" duration-ms="31822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddition()[pri:0, instance:com.amazon.tests.LoginTest@239a307b]" started-at="2026-01-14T00:19:25 IST" name="testAddition" finished-at="2026-01-14T00:19:25 IST" duration-ms="9" status="PASS">
+        <test-method signature="testAddition()[pri:0, instance:com.amazon.tests.LoginTest@5965d37]" started-at="2026-01-14T12:16:03 IST" name="testAddition" finished-at="2026-01-14T12:16:03 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddition -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.tests.LoginTest@239a307b]" started-at="2026-01-14T00:19:25 IST" name="tearDown" finished-at="2026-01-14T00:19:27 IST" duration-ms="1287" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.tests.LoginTest@5965d37]" started-at="2026-01-14T12:16:03 IST" name="tearDown" finished-at="2026-01-14T12:16:04 IST" duration-ms="1276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
