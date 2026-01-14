@@ -97,7 +97,7 @@
 					</systemPropertyVariables>
 
 					<suiteXmlFiles>
-						<suiteXmlFile>./src/test/resources/testng.xml</suiteXmlFile>
+						<suiteXmlFile>./src/test/resources/testRunners/${env}/${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
 						<allure.results.directory>
