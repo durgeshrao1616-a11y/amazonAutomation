@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import com.amazon.utils.ConfigReader;
 
@@ -16,7 +17,10 @@ public class DriverManager {
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments("--headless"); 
+			driver = new FirefoxDriver(options);
+
 		}
 		driver.manage().timeouts()
 				.implicitlyWait(Duration.ofSeconds(Integer.parseInt(ConfigReader.get("implicitWait"))));
