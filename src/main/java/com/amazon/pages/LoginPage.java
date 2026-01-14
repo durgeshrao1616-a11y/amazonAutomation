@@ -48,7 +48,7 @@ public class LoginPage {
 
 	public boolean verifyJobDropDownList() {
 		Set<String> set1 = new HashSet<>(
-				Arrays.asList("Job Titles", "Pay Grades", "Employment Status", "Job Categories", "Work Shifts","dsasf"));
+				Arrays.asList("Job Titles", "Pay Grades", "Employment Status", "Job Categories", "Work Shifts"));
 		Set<String> set2 = new HashSet<>();
 		// Check for a unique element on Job Details page
 		try {
