@@ -14,7 +14,7 @@
     <test name="SampleTests">
         <classes>
             <!-- Add your test classes here -->
-            <class name="com.amazon.tests.LoginTest"/>
+            <class name="com.amazon.androidTest.AndroidCalenderTest"/>
           <!--  <class name="com.example.tests.PaymentTest"/>-->
         </classes>
     </test>
