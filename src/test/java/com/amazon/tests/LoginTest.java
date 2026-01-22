@@ -1,9 +1,9 @@
 package com.amazon.tests;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.amazon.base.BaseTest;
-import com.amazon.driverUtil.DriverManager;
 import com.amazon.pages.LoginPage;
 import com.amazon.utils.TestDataProvider;
 
@@ -13,14 +13,19 @@ import io.qameta.allure.Step;
 public class LoginTest extends BaseTest {
 	LoginPage loginPage;
 
-	@Test(dataProvider = "loginData", dataProviderClass = TestDataProvider.class, enabled = false)
-	public void testLogin(String username, String password) throws InterruptedException {
-		loginPage = new LoginPage(DriverManager.getDriver());
-		loginPage.login(username, password);
-		org.testng.Assert.assertTrue(DriverManager.getDriver().getTitle().contains("OrangeHRM"));
+	@BeforeMethod
+	public void initPage() {
+		loginPage = new LoginPage(driver);
 	}
 
-	@Test(dependsOnMethods = "testLogin", dataProvider = "loginData", dataProviderClass = TestDataProvider.class, enabled = false)
+	@Test(dataProvider = "loginData", dataProviderClass = TestDataProvider.class, priority = 1)
+	public void testLogin(String username, String password) throws InterruptedException {
+		loginPage = new LoginPage(driver);
+		loginPage.login(username, password);
+		org.testng.Assert.assertTrue(driver.getTitle().contains("OrangeHRM"));
+	}
+
+	@Test(dependsOnMethods = "testLogin", dataProvider = "loginData", dataProviderClass = TestDataProvider.class, priority = 2)
 	public void testAdminJobDetails(String username, String password) {
 		loginPage.navigateToAdminJobDetails();
 		boolean value = loginPage.verifyJobDropDownList();

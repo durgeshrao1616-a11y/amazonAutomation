@@ -1,18 +1,25 @@
 package com.amazon.base;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
+import com.amazon.config.ConfigLoader;
 import com.amazon.driverUtil.DriverManager;
 
 public class BaseTest {
-	@BeforeTest
+	public WebDriver driver;
+
+	@BeforeClass
 	public void setUp() {
+		ConfigLoader.load(System.getProperty("env", "qa")); // loads config.qa.properties
 		DriverManager.initDriver();
+		driver = DriverManager.getDriver();
 	}
 
-	@AfterTest
+	@AfterClass
 	public void tearDown() {
 		DriverManager.quitDriver();
 	}
+
 }
